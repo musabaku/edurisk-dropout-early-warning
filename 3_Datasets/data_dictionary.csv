@@ -1,0 +1,38 @@
+original_column,clean_name,description,group,min,max
+Marital status,marital_status,Marital status,Enrollment (demographic / socio-economic / admission),1,6
+Application mode,application_mode,Application mode,Enrollment (demographic / socio-economic / admission),1,57
+Application order,application_order,Application order (choice rank),Enrollment (demographic / socio-economic / admission),0,9
+Course,course,Course,Enrollment (demographic / socio-economic / admission),33,9991
+Daytime/evening attendance,daytime_attendance,Daytime attendance,Enrollment (demographic / socio-economic / admission),0,1
+Previous qualification,prev_qualification,Previous qualification,Enrollment (demographic / socio-economic / admission),1,43
+Previous qualification (grade),prev_qualification_grade,Previous qualification grade,Enrollment (demographic / socio-economic / admission),95.0,190.0
+Nacionality,nationality,Nationality,Enrollment (demographic / socio-economic / admission),1,109
+Mother's qualification,mother_qualification,Mother's qualification,Enrollment (demographic / socio-economic / admission),1,44
+Father's qualification,father_qualification,Father's qualification,Enrollment (demographic / socio-economic / admission),1,44
+Mother's occupation,mother_occupation,Mother's occupation,Enrollment (demographic / socio-economic / admission),0,194
+Father's occupation,father_occupation,Father's occupation,Enrollment (demographic / socio-economic / admission),0,195
+Admission grade,admission_grade,Admission grade,Enrollment (demographic / socio-economic / admission),95.0,190.0
+Displaced,displaced,Displaced (lives away from home),Enrollment (demographic / socio-economic / admission),0,1
+Educational special needs,special_needs,Special educational needs,Enrollment (demographic / socio-economic / admission),0,1
+Debtor,debtor,Debtor,Enrollment (demographic / socio-economic / admission),0,1
+Tuition fees up to date,tuition_up_to_date,Tuition fees up to date,Enrollment (demographic / socio-economic / admission),0,1
+Gender,gender,Gender (1 = male),Enrollment (demographic / socio-economic / admission),0,1
+Scholarship holder,scholarship_holder,Scholarship holder,Enrollment (demographic / socio-economic / admission),0,1
+Age at enrollment,age_at_enrollment,Age at enrollment,Enrollment (demographic / socio-economic / admission),17,70
+International,international,International student,Enrollment (demographic / socio-economic / admission),0,1
+Curricular units 1st sem (credited),sem1_credited,Sem 1 units credited,Academic - Semester 1,0,20
+Curricular units 1st sem (enrolled),sem1_enrolled,Sem 1 units enrolled,Academic - Semester 1,0,26
+Curricular units 1st sem (evaluations),sem1_evaluations,Sem 1 evaluations,Academic - Semester 1,0,45
+Curricular units 1st sem (approved),sem1_approved,Sem 1 units passed,Academic - Semester 1,0,26
+Curricular units 1st sem (grade),sem1_grade,Sem 1 average grade,Academic - Semester 1,0.0,18.875
+Curricular units 1st sem (without evaluations),sem1_without_eval,Sem 1 units not evaluated,Academic - Semester 1,0,12
+Curricular units 2nd sem (credited),sem2_credited,Sem 2 units credited,Academic - Semester 2,0,19
+Curricular units 2nd sem (enrolled),sem2_enrolled,Sem 2 units enrolled,Academic - Semester 2,0,23
+Curricular units 2nd sem (evaluations),sem2_evaluations,Sem 2 evaluations,Academic - Semester 2,0,33
+Curricular units 2nd sem (approved),sem2_approved,Sem 2 units passed,Academic - Semester 2,0,20
+Curricular units 2nd sem (grade),sem2_grade,Sem 2 average grade,Academic - Semester 2,0.0,18.571428571428573
+Curricular units 2nd sem (without evaluations),sem2_without_eval,Sem 2 units not evaluated,Academic - Semester 2,0,12
+Unemployment rate,unemployment_rate,Unemployment rate,Enrollment (demographic / socio-economic / admission),7.6,16.2
+Inflation rate,inflation_rate,Inflation rate,Enrollment (demographic / socio-economic / admission),-0.8,3.7
+GDP,gdp,GDP growth,Enrollment (demographic / socio-economic / admission),-4.06,3.51
+Target,target,Final outcome: Dropout / Enrolled / Graduate,Target,,

@@ -1,0 +1,889 @@
+{
+  "generated_at": "2026-11-09T21:55:36",
+  "runtime_seconds": 59.7,
+  "quick_mode": false,
+  "environment": {
+    "python": "3.12.13",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4",
+    "scikit_learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "shap": "0.54.1",
+    "platform": "macOS-26.7.1-arm64-arm-64bit"
+  },
+  "data": {
+    "rows": 4424,
+    "columns": 38,
+    "duplicates": 0,
+    "class_counts": {
+      "Dropout": 1421,
+      "Enrolled": 794,
+      "Graduate": 2209
+    }
+  },
+  "split": {
+    "train": 3539,
+    "test": 885
+  },
+  "cv": {
+    "enrollment": {
+      "Majority baseline": {
+        "mean": {
+          "accuracy": 0.4992935855328874,
+          "balanced_accuracy": 0.3333333333333333,
+          "macro_f1": 0.22201273668881658,
+          "dropout_precision": 0.0,
+          "dropout_recall": 0.0,
+          "dropout_f1": 0.0,
+          "roc_auc_macro": 0.5,
+          "dropout_auc": 0.5
+        },
+        "std": {
+          "accuracy": 0.000706214830551136,
+          "balanced_accuracy": 0.0,
+          "macro_f1": 0.0002094460339301694,
+          "dropout_precision": 0.0,
+          "dropout_recall": 0.0,
+          "dropout_f1": 0.0,
+          "roc_auc_macro": 0.0,
+          "dropout_auc": 0.0
+        }
+      },
+      "Logistic Regression": {
+        "mean": {
+          "accuracy": 0.6052445680403392,
+          "balanced_accuracy": 0.5825089201687754,
+          "macro_f1": 0.571686846069834,
+          "dropout_precision": 0.6664157210383626,
+          "dropout_recall": 0.5847785763969394,
+          "dropout_f1": 0.6211675758144531,
+          "roc_auc_macro": 0.7722153707837947,
+          "dropout_auc": 0.8150801073338314
+        },
+        "std": {
+          "accuracy": 0.02586443489718985,
+          "balanced_accuracy": 0.021342786685413794,
+          "macro_f1": 0.022743120342217937,
+          "dropout_precision": 0.005253353787187907,
+          "dropout_recall": 0.06797827144037116,
+          "dropout_f1": 0.0397861413936365,
+          "roc_auc_macro": 0.01647351549399629,
+          "dropout_auc": 0.012885147766895847
+        }
+      },
+      "Decision Tree": {
+        "mean": {
+          "accuracy": 0.5606078041218165,
+          "balanced_accuracy": 0.5242405723337402,
+          "macro_f1": 0.5193468097038847,
+          "dropout_precision": 0.6589939477721577,
+          "dropout_recall": 0.5179457454208208,
+          "dropout_f1": 0.5752355260818509,
+          "roc_auc_macro": 0.7291381985895069,
+          "dropout_auc": 0.7745985533121807
+        },
+        "std": {
+          "accuracy": 0.017634752256682443,
+          "balanced_accuracy": 0.026772611819172513,
+          "macro_f1": 0.019022238580048135,
+          "dropout_precision": 0.045478490256303655,
+          "dropout_recall": 0.07539603576791448,
+          "dropout_f1": 0.04060329243035988,
+          "roc_auc_macro": 0.01913149522579564,
+          "dropout_auc": 0.016476127884981834
+        }
+      },
+      "Random Forest": {
+        "mean": {
+          "accuracy": 0.6383141946155874,
+          "balanced_accuracy": 0.555845843791617,
+          "macro_f1": 0.5576929275829403,
+          "dropout_precision": 0.639374635645676,
+          "dropout_recall": 0.6358296622613804,
+          "dropout_f1": 0.6363653360123269,
+          "roc_auc_macro": 0.7789121400537984,
+          "dropout_auc": 0.8137722815736959
+        },
+        "std": {
+          "accuracy": 0.004633661871726943,
+          "balanced_accuracy": 0.013123276829450504,
+          "macro_f1": 0.016056335835610197,
+          "dropout_precision": 0.02757707038322645,
+          "dropout_recall": 0.04354774592954935,
+          "dropout_f1": 0.018259063264031122,
+          "roc_auc_macro": 0.012265013003999594,
+          "dropout_auc": 0.01491377709915506
+        }
+      },
+      "XGBoost": {
+        "mean": {
+          "accuracy": 0.6320959093488041,
+          "balanced_accuracy": 0.591323259077642,
+          "macro_f1": 0.5870469186415844,
+          "dropout_precision": 0.6682300842702411,
+          "dropout_recall": 0.6014993430713347,
+          "dropout_f1": 0.632004140697026,
+          "roc_auc_macro": 0.7850319707347937,
+          "dropout_auc": 0.8177444266340481
+        },
+        "std": {
+          "accuracy": 0.007922837628307451,
+          "balanced_accuracy": 0.01350604307245562,
+          "macro_f1": 0.01181747787302305,
+          "dropout_precision": 0.01629018495650001,
+          "dropout_recall": 0.04683957995615365,
+          "dropout_f1": 0.02286429734696252,
+          "roc_auc_macro": 0.010608679360852927,
+          "dropout_auc": 0.008973269009131818
+        }
+      }
+    },
+    "semester1": {
+      "Majority baseline": {
+        "mean": {
+          "accuracy": 0.4992935855328874,
+          "balanced_accuracy": 0.3333333333333333,
+          "macro_f1": 0.22201273668881658,
+          "dropout_precision": 0.0,
+          "dropout_recall": 0.0,
+          "dropout_f1": 0.0,
+          "roc_auc_macro": 0.5,
+          "dropout_auc": 0.5
+        },
+        "std": {
+          "accuracy": 0.000706214830551136,
+          "balanced_accuracy": 0.0,
+          "macro_f1": 0.0002094460339301694,
+          "dropout_precision": 0.0,
+          "dropout_recall": 0.0,
+          "dropout_f1": 0.0,
+          "roc_auc_macro": 0.0,
+          "dropout_auc": 0.0
+        }
+      },
+      "Logistic Regression": {
+        "mean": {
+          "accuracy": 0.7199701931452225,
+          "balanced_accuracy": 0.6841953478667145,
+          "macro_f1": 0.6775682055037808,
+          "dropout_precision": 0.803606874328992,
+          "dropout_recall": 0.7053249864749981,
+          "dropout_f1": 0.750723128170924,
+          "roc_auc_macro": 0.8621468288372298,
+          "dropout_auc": 0.897960656681892
+        },
+        "std": {
+          "accuracy": 0.022574040155503582,
+          "balanced_accuracy": 0.02406004605158126,
+          "macro_f1": 0.023453666935449334,
+          "dropout_precision": 0.031403358402784826,
+          "dropout_recall": 0.035849473337800294,
+          "dropout_f1": 0.02563686454807202,
+          "roc_auc_macro": 0.01337326102348406,
+          "dropout_auc": 0.016319344074547465
+        }
+      },
+      "Decision Tree": {
+        "mean": {
+          "accuracy": 0.6708048649901309,
+          "balanced_accuracy": 0.642598996369694,
+          "macro_f1": 0.6341959664679655,
+          "dropout_precision": 0.7957739241858947,
+          "dropout_recall": 0.6569904938557849,
+          "dropout_f1": 0.7181971452107199,
+          "roc_auc_macro": 0.8186257267888928,
+          "dropout_auc": 0.8610640073645449
+        },
+        "std": {
+          "accuracy": 0.02262778180362048,
+          "balanced_accuracy": 0.015395881935443454,
+          "macro_f1": 0.01792577414449314,
+          "dropout_precision": 0.030482766013855776,
+          "dropout_recall": 0.052620098325008365,
+          "dropout_f1": 0.027932200778089947,
+          "roc_auc_macro": 0.014349208971355335,
+          "dropout_auc": 0.017907229968264375
+        }
+      },
+      "Random Forest": {
+        "mean": {
+          "accuracy": 0.7448353430984744,
+          "balanced_accuracy": 0.6722555092477122,
+          "macro_f1": 0.6786893581158546,
+          "dropout_precision": 0.7979339401539417,
+          "dropout_recall": 0.7396282556611793,
+          "dropout_f1": 0.76761223034012,
+          "roc_auc_macro": 0.8687582507260189,
+          "dropout_auc": 0.9020638714433638
+        },
+        "std": {
+          "accuracy": 0.02080925993590378,
+          "balanced_accuracy": 0.02172430839854404,
+          "macro_f1": 0.024074961773683696,
+          "dropout_precision": 0.0379837425411944,
+          "dropout_recall": 0.03693274895543105,
+          "dropout_f1": 0.03663339261674448,
+          "roc_auc_macro": 0.01317826983214479,
+          "dropout_auc": 0.0151367816689738
+        }
+      },
+      "XGBoost": {
+        "mean": {
+          "accuracy": 0.7403163681985632,
+          "balanced_accuracy": 0.7018957744225938,
+          "macro_f1": 0.6969057330315727,
+          "dropout_precision": 0.8199853552275924,
+          "dropout_recall": 0.7088376226910891,
+          "dropout_f1": 0.7602429471264562,
+          "roc_auc_macro": 0.8748212274420102,
+          "dropout_auc": 0.9063963660518407
+        },
+        "std": {
+          "accuracy": 0.013377435324746643,
+          "balanced_accuracy": 0.017971401895802607,
+          "macro_f1": 0.016378862301556163,
+          "dropout_precision": 0.031060538592400724,
+          "dropout_recall": 0.032439116969787185,
+          "dropout_f1": 0.030118164583874455,
+          "roc_auc_macro": 0.011834195871337551,
+          "dropout_auc": 0.01122059951814875
+        }
+      }
+    },
+    "semester2": {
+      "Majority baseline": {
+        "mean": {
+          "accuracy": 0.4992935855328874,
+          "balanced_accuracy": 0.3333333333333333,
+          "macro_f1": 0.22201273668881658,
+          "dropout_precision": 0.0,
+          "dropout_recall": 0.0,
+          "dropout_f1": 0.0,
+          "roc_auc_macro": 0.5,
+          "dropout_auc": 0.5
+        },
+        "std": {
+          "accuracy": 0.000706214830551136,
+          "balanced_accuracy": 0.0,
+          "macro_f1": 0.0002094460339301694,
+          "dropout_precision": 0.0,
+          "dropout_recall": 0.0,
+          "dropout_f1": 0.0,
+          "roc_auc_macro": 0.0,
+          "dropout_auc": 0.0
+        }
+      },
+      "Logistic Regression": {
+        "mean": {
+          "accuracy": 0.7535968003580018,
+          "balanced_accuracy": 0.7213954986070015,
+          "macro_f1": 0.7131825583230305,
+          "dropout_precision": 0.8292311423655297,
+          "dropout_recall": 0.7361001623000233,
+          "dropout_f1": 0.779302437102869,
+          "roc_auc_macro": 0.8879314579187769,
+          "dropout_auc": 0.9189432380466753
+        },
+        "std": {
+          "accuracy": 0.017169342907424997,
+          "balanced_accuracy": 0.021772396024615268,
+          "macro_f1": 0.02023800985127981,
+          "dropout_precision": 0.035106133187305946,
+          "dropout_recall": 0.02783373266575701,
+          "dropout_f1": 0.019460795498157477,
+          "roc_auc_macro": 0.01053948197097831,
+          "dropout_auc": 0.01577631100655668
+        }
+      },
+      "Decision Tree": {
+        "mean": {
+          "accuracy": 0.7095226108567273,
+          "balanced_accuracy": 0.6836378232637418,
+          "macro_f1": 0.6736228786584438,
+          "dropout_precision": 0.8512441266148025,
+          "dropout_recall": 0.6772161681737383,
+          "dropout_f1": 0.7540888513524776,
+          "roc_auc_macro": 0.8486464877534676,
+          "dropout_auc": 0.8894430085594879
+        },
+        "std": {
+          "accuracy": 0.013342025604375238,
+          "balanced_accuracy": 0.017630393330242654,
+          "macro_f1": 0.012924160799349719,
+          "dropout_precision": 0.028434297020520197,
+          "dropout_recall": 0.02450437053211813,
+          "dropout_f1": 0.021471125625090487,
+          "roc_auc_macro": 0.014262827765627428,
+          "dropout_auc": 0.022611918154712536
+        }
+      },
+      "Random Forest": {
+        "mean": {
+          "accuracy": 0.7702706590271617,
+          "balanced_accuracy": 0.7075603701620437,
+          "macro_f1": 0.7130061167615636,
+          "dropout_precision": 0.8259592886300153,
+          "dropout_recall": 0.746676713810959,
+          "dropout_f1": 0.7841430063221426,
+          "roc_auc_macro": 0.8898298120251884,
+          "dropout_auc": 0.9223819574023899
+        },
+        "std": {
+          "accuracy": 0.013534842951637796,
+          "balanced_accuracy": 0.01702490714714214,
+          "macro_f1": 0.01798901553780911,
+          "dropout_precision": 0.04057457617819968,
+          "dropout_recall": 0.021357480552627487,
+          "dropout_f1": 0.028169900322783607,
+          "roc_auc_macro": 0.00906791421591356,
+          "dropout_auc": 0.01595180651870712
+        }
+      },
+      "XGBoost": {
+        "mean": {
+          "accuracy": 0.7691395168572548,
+          "balanced_accuracy": 0.7344584079750429,
+          "macro_f1": 0.7286449640944104,
+          "dropout_precision": 0.8564947595894669,
+          "dropout_recall": 0.7501854857407836,
+          "dropout_f1": 0.7994899265358915,
+          "roc_auc_macro": 0.8946203295259337,
+          "dropout_auc": 0.9261448808189041
+        },
+        "std": {
+          "accuracy": 0.015121341138664418,
+          "balanced_accuracy": 0.018609329684290805,
+          "macro_f1": 0.017129034877854644,
+          "dropout_precision": 0.03225403711649322,
+          "dropout_recall": 0.020754552357743164,
+          "dropout_f1": 0.018233838067714003,
+          "roc_auc_macro": 0.009094061491617187,
+          "dropout_auc": 0.012244538565266324
+        }
+      }
+    }
+  },
+  "xgb_tuning": {
+    "enrollment": [
+      {
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "cv_macro_f1": 0.5853458572458978
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "cv_macro_f1": 0.5852379795702098
+      },
+      {
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "cv_macro_f1": 0.5870469186415844
+      },
+      {
+        "max_depth": 4,
+        "learning_rate": 0.1,
+        "cv_macro_f1": 0.5754520406927892
+      },
+      {
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "cv_macro_f1": 0.5820121873268354
+      },
+      {
+        "max_depth": 6,
+        "learning_rate": 0.1,
+        "cv_macro_f1": 0.5719878911156397
+      }
+    ],
+    "semester1": [
+      {
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "cv_macro_f1": 0.6969057330315727
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "cv_macro_f1": 0.6901897565558679
+      },
+      {
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "cv_macro_f1": 0.6966883731061249
+      },
+      {
+        "max_depth": 4,
+        "learning_rate": 0.1,
+        "cv_macro_f1": 0.6888358955313791
+      },
+      {
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "cv_macro_f1": 0.6884849053660618
+      },
+      {
+        "max_depth": 6,
+        "learning_rate": 0.1,
+        "cv_macro_f1": 0.6817167326068755
+      }
+    ],
+    "semester2": [
+      {
+        "max_depth": 3,
+        "learning_rate": 0.05,
+        "cv_macro_f1": 0.7286449640944104
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "cv_macro_f1": 0.722707994805027
+      },
+      {
+        "max_depth": 4,
+        "learning_rate": 0.05,
+        "cv_macro_f1": 0.7264516070557929
+      },
+      {
+        "max_depth": 4,
+        "learning_rate": 0.1,
+        "cv_macro_f1": 0.7158814467781843
+      },
+      {
+        "max_depth": 6,
+        "learning_rate": 0.05,
+        "cv_macro_f1": 0.7178371769249768
+      },
+      {
+        "max_depth": 6,
+        "learning_rate": 0.1,
+        "cv_macro_f1": 0.7106502858879582
+      }
+    ]
+  },
+  "test": {
+    "enrollment": {
+      "Majority baseline": {
+        "accuracy": 0.4994350282485876,
+        "balanced_accuracy": 0.3333333333333333,
+        "macro_f1": 0.22205476011052497,
+        "dropout_precision": 0.0,
+        "dropout_recall": 0.0,
+        "dropout_f1": 0.0,
+        "roc_auc_macro": 0.5,
+        "dropout_auc": 0.5
+      },
+      "Logistic Regression": {
+        "accuracy": 0.5819209039548022,
+        "balanced_accuracy": 0.5735536615349344,
+        "macro_f1": 0.5589827257087124,
+        "dropout_precision": 0.6877637130801688,
+        "dropout_recall": 0.573943661971831,
+        "dropout_f1": 0.6257197696737045,
+        "roc_auc_macro": 0.7602367709243575,
+        "dropout_auc": 0.812876426612922
+      },
+      "Decision Tree": {
+        "accuracy": 0.5536723163841808,
+        "balanced_accuracy": 0.5218146724337029,
+        "macro_f1": 0.5157040884493199,
+        "dropout_precision": 0.5958188153310104,
+        "dropout_recall": 0.602112676056338,
+        "dropout_f1": 0.5989492119089317,
+        "roc_auc_macro": 0.7123089392485878,
+        "dropout_auc": 0.768138782779874
+      },
+      "Random Forest": {
+        "accuracy": 0.6067796610169491,
+        "balanced_accuracy": 0.536454920077968,
+        "macro_f1": 0.5369017591148055,
+        "dropout_precision": 0.6109215017064846,
+        "dropout_recall": 0.6302816901408451,
+        "dropout_f1": 0.6204506065857885,
+        "roc_auc_macro": 0.752836206609527,
+        "dropout_auc": 0.8031449930866397
+      },
+      "XGBoost": {
+        "accuracy": 0.584180790960452,
+        "balanced_accuracy": 0.5566058779038098,
+        "macro_f1": 0.5498199805148282,
+        "dropout_precision": 0.6498054474708171,
+        "dropout_recall": 0.5880281690140845,
+        "dropout_f1": 0.6173752310536045,
+        "roc_auc_macro": 0.7628426099261558,
+        "dropout_auc": 0.811312132361557
+      }
+    },
+    "semester1": {
+      "Majority baseline": {
+        "accuracy": 0.4994350282485876,
+        "balanced_accuracy": 0.3333333333333333,
+        "macro_f1": 0.22205476011052497,
+        "dropout_precision": 0.0,
+        "dropout_recall": 0.0,
+        "dropout_f1": 0.0,
+        "roc_auc_macro": 0.5,
+        "dropout_auc": 0.5
+      },
+      "Logistic Regression": {
+        "accuracy": 0.6971751412429379,
+        "balanced_accuracy": 0.6675936024429873,
+        "macro_f1": 0.6583476610072355,
+        "dropout_precision": 0.7827868852459017,
+        "dropout_recall": 0.6725352112676056,
+        "dropout_f1": 0.7234848484848485,
+        "roc_auc_macro": 0.860087050297818,
+        "dropout_auc": 0.9014025919242578
+      },
+      "Decision Tree": {
+        "accuracy": 0.6734463276836158,
+        "balanced_accuracy": 0.6421917343155091,
+        "macro_f1": 0.6341356150959631,
+        "dropout_precision": 0.7801724137931034,
+        "dropout_recall": 0.6373239436619719,
+        "dropout_f1": 0.7015503875968992,
+        "roc_auc_macro": 0.8304456748447661,
+        "dropout_auc": 0.8612172201260808
+      },
+      "Random Forest": {
+        "accuracy": 0.7378531073446327,
+        "balanced_accuracy": 0.6710864378049509,
+        "macro_f1": 0.6743055986024938,
+        "dropout_precision": 0.779467680608365,
+        "dropout_recall": 0.721830985915493,
+        "dropout_f1": 0.7495429616087751,
+        "roc_auc_macro": 0.8671930316932713,
+        "dropout_auc": 0.8993110074758033
+      },
+      "XGBoost": {
+        "accuracy": 0.7073446327683616,
+        "balanced_accuracy": 0.683021433189478,
+        "macro_f1": 0.6706379779547822,
+        "dropout_precision": 0.8017241379310345,
+        "dropout_recall": 0.6549295774647887,
+        "dropout_f1": 0.7209302325581395,
+        "roc_auc_macro": 0.8683581643533697,
+        "dropout_auc": 0.901549061423449
+      }
+    },
+    "semester2": {
+      "Majority baseline": {
+        "accuracy": 0.4994350282485876,
+        "balanced_accuracy": 0.3333333333333333,
+        "macro_f1": 0.22205476011052497,
+        "dropout_precision": 0.0,
+        "dropout_recall": 0.0,
+        "dropout_f1": 0.0,
+        "roc_auc_macro": 0.5,
+        "dropout_auc": 0.5
+      },
+      "Logistic Regression": {
+        "accuracy": 0.7220338983050848,
+        "balanced_accuracy": 0.6947559504460288,
+        "macro_f1": 0.6832394447363117,
+        "dropout_precision": 0.7943548387096774,
+        "dropout_recall": 0.6936619718309859,
+        "dropout_f1": 0.7406015037593985,
+        "roc_auc_macro": 0.8819229951873213,
+        "dropout_auc": 0.9118019263668533
+      },
+      "Decision Tree": {
+        "accuracy": 0.6745762711864407,
+        "balanced_accuracy": 0.6619887323409231,
+        "macro_f1": 0.6454341424092925,
+        "dropout_precision": 0.8269230769230769,
+        "dropout_recall": 0.6056338028169014,
+        "dropout_f1": 0.6991869918699187,
+        "roc_auc_macro": 0.847167575643255,
+        "dropout_auc": 0.8863894682571302
+      },
+      "Random Forest": {
+        "accuracy": 0.7593220338983051,
+        "balanced_accuracy": 0.6997608558472074,
+        "macro_f1": 0.703152155951733,
+        "dropout_precision": 0.8127490039840638,
+        "dropout_recall": 0.7183098591549296,
+        "dropout_f1": 0.7626168224299066,
+        "roc_auc_macro": 0.8895008276750419,
+        "dropout_auc": 0.9135537015771837
+      },
+      "XGBoost": {
+        "accuracy": 0.7299435028248588,
+        "balanced_accuracy": 0.7054877430438231,
+        "macro_f1": 0.692723426188738,
+        "dropout_precision": 0.7983539094650206,
+        "dropout_recall": 0.6830985915492958,
+        "dropout_f1": 0.7362428842504743,
+        "roc_auc_macro": 0.888835959234891,
+        "dropout_auc": 0.9136005718169249
+      }
+    }
+  },
+  "deployed": {
+    "enrollment": {
+      "model": "XGBoost",
+      "xgb_params": {
+        "max_depth": 4,
+        "learning_rate": 0.05
+      }
+    },
+    "semester1": {
+      "model": "XGBoost",
+      "xgb_params": {
+        "max_depth": 3,
+        "learning_rate": 0.05
+      }
+    },
+    "semester2": {
+      "model": "XGBoost",
+      "xgb_params": {
+        "max_depth": 3,
+        "learning_rate": 0.05
+      }
+    }
+  },
+  "primary_checkpoint": "semester1",
+  "example_student": {
+    "student_id": 332,
+    "p_dropout": 0.7947321534156799,
+    "reasons": [
+      {
+        "feature": "sem1_approval_rate",
+        "text": "Sem 1 pass rate = 0%",
+        "impact": 0.9733188152313232
+      },
+      {
+        "feature": "age_at_enrollment",
+        "text": "Age at enrollment = 26",
+        "impact": 0.33586055040359497
+      },
+      {
+        "feature": "unemployment_rate",
+        "text": "Unemployment rate = 16.20",
+        "impact": 0.2833072543144226
+      },
+      {
+        "feature": "debtor",
+        "text": "Debtor = yes",
+        "impact": 0.22878921031951904
+      },
+      {
+        "feature": "sem1_grade",
+        "text": "Sem 1 average grade = 0",
+        "impact": 0.22288155555725098
+      }
+    ]
+  },
+  "shap_top": [
+    {
+      "feature": "sem1_approval_rate",
+      "mean_abs_shap": 0.6580758690834045,
+      "label": "Sem 1 pass rate"
+    },
+    {
+      "feature": "tuition_up_to_date",
+      "mean_abs_shap": 0.3565063774585724,
+      "label": "Tuition fees up to date"
+    },
+    {
+      "feature": "age_at_enrollment",
+      "mean_abs_shap": 0.20552700757980347,
+      "label": "Age at enrollment"
+    },
+    {
+      "feature": "unemployment_rate",
+      "mean_abs_shap": 0.1493527740240097,
+      "label": "Unemployment rate"
+    },
+    {
+      "feature": "gender",
+      "mean_abs_shap": 0.12416905164718628,
+      "label": "Gender (1 = male)"
+    },
+    {
+      "feature": "course",
+      "mean_abs_shap": 0.11799252033233643,
+      "label": "Course"
+    },
+    {
+      "feature": "displaced",
+      "mean_abs_shap": 0.11282084137201309,
+      "label": "Displaced (lives away from home)"
+    },
+    {
+      "feature": "sem1_grade",
+      "mean_abs_shap": 0.11028636246919632,
+      "label": "Sem 1 average grade"
+    },
+    {
+      "feature": "sem1_enrolled",
+      "mean_abs_shap": 0.10711120069026947,
+      "label": "Sem 1 units enrolled"
+    },
+    {
+      "feature": "sem1_approved",
+      "mean_abs_shap": 0.09181854873895645,
+      "label": "Sem 1 units passed"
+    },
+    {
+      "feature": "admission_grade",
+      "mean_abs_shap": 0.09006349742412567,
+      "label": "Admission grade"
+    },
+    {
+      "feature": "mother_occupation",
+      "mean_abs_shap": 0.08778947591781616,
+      "label": "Mother's occupation"
+    },
+    {
+      "feature": "father_occupation",
+      "mean_abs_shap": 0.07931122928857803,
+      "label": "Father's occupation"
+    },
+    {
+      "feature": "debtor",
+      "mean_abs_shap": 0.07548469305038452,
+      "label": "Debtor"
+    },
+    {
+      "feature": "sem1_evaluations",
+      "mean_abs_shap": 0.06890623271465302,
+      "label": "Sem 1 evaluations"
+    }
+  ],
+  "risk_tiers": [
+    {
+      "tier": "High",
+      "students": 216,
+      "actual_dropouts": 179,
+      "share_of_students": 0.2440677966101695,
+      "dropout_rate_in_tier": 0.8287037037037037,
+      "share_of_all_dropouts": 0.6302816901408451
+    },
+    {
+      "tier": "Medium",
+      "students": 113,
+      "actual_dropouts": 54,
+      "share_of_students": 0.12768361581920903,
+      "dropout_rate_in_tier": 0.4778761061946903,
+      "share_of_all_dropouts": 0.19014084507042253
+    },
+    {
+      "tier": "Low",
+      "students": 556,
+      "actual_dropouts": 51,
+      "share_of_students": 0.6282485875706215,
+      "dropout_rate_in_tier": 0.09172661870503597,
+      "share_of_all_dropouts": 0.1795774647887324
+    }
+  ],
+  "fairness": [
+    {
+      "attribute": "Gender",
+      "group": "Male",
+      "students": 315,
+      "actual_dropout_rate": 0.4603174603174603,
+      "flag_rate": 0.346031746031746,
+      "recall": 0.6551724137931034,
+      "false_positive_rate": 0.08235294117647059
+    },
+    {
+      "attribute": "Gender",
+      "group": "Female",
+      "students": 570,
+      "actual_dropout_rate": 0.24385964912280703,
+      "flag_rate": 0.18771929824561404,
+      "recall": 0.60431654676259,
+      "false_positive_rate": 0.05336426914153132
+    },
+    {
+      "attribute": "Scholarship",
+      "group": "No scholarship",
+      "students": 680,
+      "actual_dropout_rate": 0.3897058823529412,
+      "flag_rate": 0.29705882352941176,
+      "recall": 0.6452830188679245,
+      "false_positive_rate": 0.0746987951807229
+    },
+    {
+      "attribute": "Scholarship",
+      "group": "Scholarship",
+      "students": 205,
+      "actual_dropout_rate": 0.09268292682926829,
+      "flag_rate": 0.06829268292682927,
+      "recall": 0.42105263157894735,
+      "false_positive_rate": 0.03225806451612903
+    },
+    {
+      "attribute": "Age at enrollment",
+      "group": "17-20",
+      "students": 490,
+      "actual_dropout_rate": 0.21836734693877552,
+      "flag_rate": 0.1306122448979592,
+      "recall": 0.48598130841121495,
+      "false_positive_rate": 0.031331592689295036
+    },
+    {
+      "attribute": "Age at enrollment",
+      "group": "21-25",
+      "students": 180,
+      "actual_dropout_rate": 0.32222222222222224,
+      "flag_rate": 0.2722222222222222,
+      "recall": 0.603448275862069,
+      "false_positive_rate": 0.11475409836065574
+    },
+    {
+      "attribute": "Age at enrollment",
+      "group": "26+",
+      "students": 215,
+      "actual_dropout_rate": 0.5534883720930233,
+      "flag_rate": 0.4790697674418605,
+      "recall": 0.773109243697479,
+      "false_positive_rate": 0.11458333333333333
+    },
+    {
+      "attribute": "Displaced",
+      "group": "Displaced",
+      "students": 484,
+      "actual_dropout_rate": 0.27892561983471076,
+      "flag_rate": 0.20041322314049587,
+      "recall": 0.5703703703703704,
+      "false_positive_rate": 0.05730659025787966
+    },
+    {
+      "attribute": "Displaced",
+      "group": "Lives at home",
+      "students": 401,
+      "actual_dropout_rate": 0.371571072319202,
+      "flag_rate": 0.2967581047381546,
+      "recall": 0.6845637583892618,
+      "false_positive_rate": 0.06746031746031746
+    }
+  ],
+  "fairness_recall_gap": [
+    {
+      "attribute": "Age at enrollment",
+      "recall_gap": 0.28712793528626407
+    },
+    {
+      "attribute": "Displaced",
+      "recall_gap": 0.11419338801889134
+    },
+    {
+      "attribute": "Gender",
+      "recall_gap": 0.05085586703051348
+    },
+    {
+      "attribute": "Scholarship",
+      "recall_gap": 0.22423038728897715
+    }
+  ],
+  "db_counts": {
+    "course": 17,
+    "student": 4424,
+    "semester_record": 8848,
+    "app_user": 4,
+    "risk_assessment": 2655,
+    "intervention": 0
+  }
+}
